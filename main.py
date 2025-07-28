@@ -4,8 +4,8 @@ import json
 import os
 from src.outline_extractor import OutlineExtractor
 
-INPUT_DIR = "app/input"
-OUTPUT_DIR = "app/output"
+INPUT_DIR = "/app/input"
+OUTPUT_DIR = "/app/output"
 
 def main():
     extractor = OutlineExtractor()
