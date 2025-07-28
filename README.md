@@ -20,12 +20,12 @@ This project extracts the hierarchical outline (table of contents) from a PDF do
 1.  Clone this repository:
     ```bash
     git clone <your-repo-url>
-    cd pdf-outline-extractor
+    cd Adobe-Hack-Gen3-round1a-main
     ```
 
 2.  Build the Docker image:
     ```bash
-    docker build -t pdf-outline-extractor .
+    docker build --platform linux/amd64 -t mysolutionname:somerandomidentifier
     ```
 
 ## 🏃‍♀️ Running the Extractor
@@ -33,4 +33,5 @@ This project extracts the hierarchical outline (table of contents) from a PDF do
 To extract the outline from a PDF file, place your PDF in the `data` directory and run the following command:
 
 ```bash
-docker run -v $(pwd)/data:/app/data pdf-outline-extractor python main.py data/your_document.pdf
+docker run --rm -v $(pwd)/input:/app/input -v $(pwd)/output:/app/output -network none mysolutionname:somerandomidentifier
+```
