@@ -30,7 +30,7 @@ This project extracts the hierarchical outline (table of contents) from a PDF do
 
 ## 🏃‍♀️ Running the Extractor
 
-To extract the outline from a PDF file, place your PDF in the `data` directory and run the following command:
+To extract the outline from a PDF file, place your PDF in the `app/input` directory and run the following command:
 
 ```bash
 docker run --rm -v $(pwd)/input:/app/input -v $(pwd)/output:/app/output -network none mysolutionname:somerandomidentifier
